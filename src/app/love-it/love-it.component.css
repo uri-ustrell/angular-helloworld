@@ -1,0 +1,31 @@
+.pink{
+	color: deeppink;
+}
+
+i{
+	font-size: 3rem;
+	color: grey;
+	text-shadow: 1px 2px 1px black;
+}
+
+i:hover{
+	cursor: pointer;
+}
+
+p{
+	font-style: italic;
+	font-weight: bold;
+	font-style: 1.5rem;
+}
+
+span{
+	font-size: 3rem;
+	font-weight: bold;
+	color: grey;
+}
+._border{
+	border: 5px solid grey;
+	border-radius: 5px;
+	display: inline-block;
+	padding: 20px;
+}

@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import 'https://use.fontawesome.com/releases/v5.4.1/css/all.css';
+
+body {
+	margin:20px;
+}
+
+table {
+	border: solid;
+}
+
+.active{
+	background: tomato;
+} 
