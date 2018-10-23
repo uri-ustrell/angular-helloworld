@@ -11,6 +11,7 @@ import { FavoriteComponent } from './favorite/favorite.component';
 import { TitleCapitalizeComponent } from './title-capitalize/title-capitalize.component';
 import { PanelComponent } from './panel/panel.component';
 import { LoveItComponent } from './love-it/love-it.component';
+import { CrazyDiretivesComponent } from './crazy-diretives/crazy-diretives.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { LoveItComponent } from './love-it/love-it.component';
 	FavoriteComponent,
 	TitleCapitalizeComponent,
 	PanelComponent,
-	LoveItComponent
+	LoveItComponent,
+	CrazyDiretivesComponent
   ],
   imports: [
     BrowserModule,

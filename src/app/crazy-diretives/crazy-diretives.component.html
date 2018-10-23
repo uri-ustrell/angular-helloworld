@@ -1,0 +1,51 @@
+<h2>If-Else statement</h2>
+
+<p>1st aproach:</p>
+<div *ngIf="things.length > 0">
+	<h3>List of things</h3>
+</div>
+<div *ngIf="things.length == 0">
+	<h3>No things yet</h3>
+</div>
+
+
+<p>2nd aproach:</p>
+<div *ngIf="things.length > 0; then listThings else noThings"></div>
+<ng-template #listThings>
+	<h3>List of things</h3>
+</ng-template>
+<ng-template #noThings>
+	<h3>No things yet</h3>
+</ng-template>
+
+
+<p>3rd aproach:</p>
+<div [hidden]="things.length == 0">
+	<h3>List of things</h3>
+</div>
+<div [hidden]="things.length > 0">
+	<h3>No things yet</h3>
+</div>
+<hr>
+<h2>Switch statement</h2>
+
+<ul class="navbar navbar-light bg-light navbar-nav">
+	<li class="nav-item" [class.active]="viewMode == 'map'"><a href="#" (click)="viewMode='map'">Map View</a></li>
+	<li class="nav-item" [class.active]="viewMode == 'list'"><a href="#" (click)="viewMode='list'">List View</a></li>
+</ul>
+<div [ngSwitch]="viewMode" >
+	<div *ngSwitchCase="'map'">Map View Content</div>
+	<div *ngSwitchCase="'list'">List VIew content</div>
+	<div *ngSwitchDefault>Otherwise</div>
+</div>
+
+<hr>
+<h2>For loop</h2>
+<button (click)="onAdd()">Add 4th</button>
+<ul>
+	<li *ngFor="let thing of thingsObj; index as i">
+		{{ i + ' - ' + thing.name}}
+		<button (click)="onRemove(thing)">Remove</button>
+		<button (click)="onChange(thing)">Change</button>
+	</li>
+</ul>
