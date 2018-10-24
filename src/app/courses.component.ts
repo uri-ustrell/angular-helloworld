@@ -17,7 +17,7 @@ import { CoursesService } from './courses.service';
 		<input [(ngModel)]="userName" type="text" (keyUp.enter)="onKeyUp()" >
 
 		<button class="btn btn-primary" [style.backgroundColor]="isActive ? 'green' : 'blue'" (click)="onSave($event)" >Save</button>
-		<br /><br /><br />
+		<br /><span>(console)</span><br /><br />
 		{{ course.title | uppercase | lowercase }} <br />
 		{{ course.rating | number:'1.2-2'}} <br />
 		{{ course.students | number}} <br />

@@ -12,6 +12,9 @@ import { TitleCapitalizeComponent } from './title-capitalize/title-capitalize.co
 import { PanelComponent } from './panel/panel.component';
 import { LoveItComponent } from './love-it/love-it.component';
 import { CrazyDiretivesComponent } from './crazy-diretives/crazy-diretives.component';
+import { InputFormatDirective } from './input-format.directive';
+import { ZippyComponent } from './zippy/zippy.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { CrazyDiretivesComponent } from './crazy-diretives/crazy-diretives.compo
 	TitleCapitalizeComponent,
 	PanelComponent,
 	LoveItComponent,
-	CrazyDiretivesComponent
+	CrazyDiretivesComponent,
+	InputFormatDirective,
+	ZippyComponent,
+	ContactFormComponent
   ],
   imports: [
     BrowserModule,

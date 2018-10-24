@@ -40,7 +40,8 @@
 </div>
 
 <hr>
-<h2>For loop</h2>
+<h2>For loop (ngFor)</h2>
+<button (click)="loadThings()">Things Gen</button>
 <button (click)="onAdd()">Add 4th</button>
 <ul>
 	<li *ngFor="let thing of thingsObj; index as i">
@@ -49,3 +50,35 @@
 		<button (click)="onChange(thing)">Change</button>
 	</li>
 </ul>
+<h2>For loop (ngFor with trackBy)</h2>
+<ul>
+	<li *ngFor="let thing of thingsObj; trackBy: trackThing">
+		{{ thing.name }}
+	</li>
+</ul>
+<br><br>
+<h2>[ngClass]</h2>
+<i 
+	class="fa-star"  
+	(click)="favClick()"
+	[ngClass]="{
+		'fa': isFavorite,
+		'far': !isFavorite
+	}"
+></i>
+
+<h2>[ngStyle]</h2>
+
+<button
+	(click)="onSave()"
+	[ngStyle]="{
+	'backgroundColor': canSave ? 'blue':'gray',
+	'color': canSave ? 'white':'black',
+	'fontWeight': canSave ? 'bold':'normal'
+}"
+>Save</button>
+
+<br><br>
+<h2>Custom Directives</h2>
+
+<input type="text" [appInputFormat]="'uppercase'" />

@@ -1,0 +1,30 @@
+.zippy{
+	border: solid 1px #ccc;
+	border-radius: 3px;
+	width: 400px;
+	background: #E4DADA;
+}
+
+.zippy-heading{
+	font-weight: bold;
+	padding: 30px;
+	box-sizing: border-box;
+}
+
+.zippy-heading i{
+	float: right;
+	cursor: pointer;
+	transition-duration: 0.2s;
+}
+
+.zippy-body{
+	font-style: italic;
+	background-color: white;
+	overflow: hidden;
+	box-sizing: border-box;
+	transition: 0.3s;
+}
+
+.girala{
+	transform: rotateZ(90deg);
+}

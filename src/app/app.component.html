@@ -1,5 +1,6 @@
 <h1>Angular</h1>
 <courses></courses>
+
 <br>
 <favorite [isFavorite]="post.isFavorite" (caca)="onFavoriteChanged($event)"></favorite>
 <br>
@@ -17,10 +18,18 @@
 <h1>Directives</h1>
 <crazy-diretives></crazy-diretives>
 
+<div class="d-flex">
+	<zippy title="Shipping Details" class="mr-3">
+		<ng-container class="zippy-body">Shipping Details Content</ng-container>
+	</zippy>
+	<zippy title="Billing Details">
+		<ng-container class="zippy-body">Billing Details Content</ng-container>
+	</zippy>
+</div>
 
+<br> <br> <br>
 <br><br><br>
-<br><br><br>
-<br><br><br>
+<br><br><br>  
 <br><br><br>
 <br><br><br>
 <br><br><br>

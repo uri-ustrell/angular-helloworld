@@ -1,0 +1,21 @@
+
+<div class="zippy">
+	<div class="zippy-heading">
+		<span>{{ title }}</span>
+		<i 
+		[ngClass]="{
+			'girala': droper
+		}" 
+		(click)="girala()" 
+		class="fas fa-angle-right"
+		></i>
+	</div>
+	<div 
+	class="zippy-body" 
+	[ngStyle]="{
+		'max-height.px': bodyHeight,
+		'padding.px': bodyPadding
+}">
+		<ng-content selector=".zippy-body"></ng-content>
+	</div>
+</div>
