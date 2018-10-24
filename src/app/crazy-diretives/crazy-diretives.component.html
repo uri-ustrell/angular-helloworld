@@ -30,8 +30,8 @@
 <h2>Switch statement</h2>
 
 <ul class="navbar navbar-light bg-light navbar-nav">
-	<li class="nav-item" [class.active]="viewMode == 'map'"><a href="#" (click)="viewMode='map'">Map View</a></li>
-	<li class="nav-item" [class.active]="viewMode == 'list'"><a href="#" (click)="viewMode='list'">List View</a></li>
+	<li class="nav-item" [class.active]="viewMode == 'map'"><a href="#" (click)="viewMode = 'map'">Map View</a></li>
+	<li class="nav-item" [class.active]="viewMode == 'list'"><a href="#" (click)="viewMode = 'list'">List View</a></li>
 </ul>
 <div [ngSwitch]="viewMode" >
 	<div *ngSwitchCase="'map'">Map View Content</div>

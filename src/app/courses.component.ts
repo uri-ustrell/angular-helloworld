@@ -23,7 +23,7 @@ import { CoursesService } from './courses.service';
 		{{ course.students | number}} <br />
 		{{ course.price | currency:'EUR':'symbol-narrow':'3.2-2' }} <br />
 		{{ course.releaseDate | date:'shortDate' }}
-		{{ course.description | summary:400 }}
+		{{ course.description | summary:100 }}
 	`
 })
 
