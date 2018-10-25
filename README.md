@@ -21,16 +21,26 @@ $ `ng new hello-world`
 $ `cd hello-world`
 
 ## Manually remove every content listed here:
---folder   e2e	
+--folder   e2e
+
 --folder   src	
---file     .editorconfig	
+
+--file     .editorconfig
+
 --file     .gitignore	
+
 --file     README.md	
+
 --file     angular.json
+
 --file     package-lock.json
+
 --file     package.json
+
 --file     tsconfig.json
+
 --file     tslint.json
+
 
 ## Git Clone
 
