@@ -44,7 +44,7 @@ $ `cd hello-world`
 
 ## Git Clone
 
-$ `cd /.../hello-world`
+$ `cd /.../hello-world` *(note that /.../ needs to be replaced with your project folder path)*
 
 $ `git clone https://github.com/uri-ustrell/angular-helloworld.git`
 
