@@ -7,17 +7,22 @@ export class UsernameValidators {
 
 		return null;
 	}
+	static cannotContainNumber(control: AbstractControl): ValidationErrors | null {
+			if ((control.value as string).indexOf('1') >= 0)
+				return { cannotContainNumber: true }
+
+			return null;
+		}
 
 	static shouldBeUnique(control: AbstractControl): Promise<ValidationErrors | null> {
-		
-		return new Promise((resolve,reject)=>{
-			setTimeout(()=>{
-				//console.log('shouldBeUnique-OK');
-				if (control.value === 'walter')
+
+		return new Promise((resolve, reject) => {
+			setTimeout(() => {
+				if (control.value === 'walter') 
 					resolve({ shouldBeUnique: true });
-				else
+				else 
 					resolve(null);
 			}, 2000)
-		})
+		});
 	}
 }

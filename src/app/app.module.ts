@@ -1,3 +1,4 @@
+import { HttpModule } from '@angular/http';
 import { CoursesService } from './courses.service';
 import { SummaryPipe } from './summary.pipe';
 import { CoursesComponent } from './courses.component';
@@ -16,6 +17,7 @@ import { CrazyDiretivesComponent } from './crazy-diretives/crazy-diretives.compo
 import { InputFormatDirective } from './input-format.directive';
 import { ZippyComponent } from './zippy/zippy.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { PostsComponent } from './posts/posts.component';
 
 @NgModule({
   declarations: [
@@ -31,12 +33,14 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
   	CrazyDiretivesComponent,
   	InputFormatDirective,
   	ZippyComponent,
-  	ContactFormComponent
+  	ContactFormComponent,
+  	PostsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpModule
   ],
   providers: [
   	CoursesService

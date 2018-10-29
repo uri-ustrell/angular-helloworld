@@ -1,0 +1,24 @@
+<h1 style="color: tomato;">Consuming HTTP Services</h1>
+<input 
+	type="text" class="form-control" placeholder="enter new post title" 
+	#title
+	(keyup.enter)="createPost(title)"
+>
+<br>
+<ul class="list-group">
+	<li class="list-group-item"
+		*ngFor="let post of posts"
+		data-id="{{ post.id }}"
+	>
+		<button 
+			class="btn btn-default btn-sm"
+			(click)="updatePost(post)"
+		>Update</button>
+		<button 
+			class="btn btn-default btn-sm"
+			(click)="deletePost(post)"
+		>Delete</button>
+		<h3>{{ post.title }}</h3>
+		<p>{{ post.body }}</p>
+	</li>
+</ul>
